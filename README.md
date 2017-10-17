@@ -1,2 +1,2 @@
 # gostudy
-A try on golang
+Luck trying golang
