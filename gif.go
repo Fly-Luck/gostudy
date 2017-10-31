@@ -24,6 +24,7 @@ const (
 	blackIndex = 1 // next color in palette
 )
 
+/**
 func main() {
 	rand.Seed(time.Now().UTC().UnixNano())
 	// 1. use http to view from browser
@@ -37,8 +38,12 @@ func main() {
 		log.Fatal(http.ListenAndServe("localhost:8000", nil))
 		return
 	}
+	// 2. generate the gif file
+	// go build gif.go
+	// ./gif > out.gif
 	lissajous(os.Stdout)
 }
+*/
 
 func lissajous(out io.Writer) {
 	const (
