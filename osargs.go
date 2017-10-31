@@ -1,6 +1,6 @@
 // 1. both way of imports
-// 2. first use of variables and iteration
-// 2. first use of os.Args and slice
+// 2. use of variables and iteration
+// 2. use of os.Args and slice
 package main
 
 import (

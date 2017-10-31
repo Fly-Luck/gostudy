@@ -1,4 +1,5 @@
-// dup
+// 1. use of stdin, files and ioutil
+// 2. use of make and map
 package main
 
 import (
@@ -9,11 +10,11 @@ import (
 	"strings"
 )
 
-func main() {
-	//dup1()
-	//dup2()
-	dup3()
-}
+//func main() {
+//dup1()
+//dup2()
+//	dup3()
+//}
 
 //read stdin
 func dup1() {
@@ -46,7 +47,7 @@ func dup2() {
 func dup3() {
 	counts := make(map[string]int)
 	for _, filename := range os.Args[1:] {
-		data, err := ioutil.ReadFile(filename)
+		data, err := ioutil.ReadFile(filename) //file->byte slice
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "dup2: %v\n", err)
 			continue
