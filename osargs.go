@@ -9,11 +9,11 @@ import (
 )
 import "os"
 
-func main() {
-	echo1()
-	echo2()
-	echo3()
-}
+//func main() {
+//	echo1()
+//	echo2()
+//	echo3()
+//}
 
 func echo1() {
 	var s string
