@@ -10,6 +10,7 @@ import (
 	"strings"
 )
 
+/*
 func main() {
 	for _, url := range os.Args[1:] {
 		//fetch1(url)
@@ -18,6 +19,7 @@ func main() {
 		fetch4(url)
 	}
 }
+*/
 
 //basic fetch
 func fetch1(url string) {
@@ -53,11 +55,14 @@ func fetch3(url string) {
 	if !strings.HasPrefix(url, "http://") {
 		url = "http://" + url
 	}
-	fetch1(url)
+	fetch2(url)
 }
 
 //output response status
 func fetch4(url string) {
+	if !strings.HasPrefix(url, "http://") {
+		url = "http://" + url
+	}
 	rsp, err := http.Get(url)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "fetch: reading %s: %v\n", url, err)

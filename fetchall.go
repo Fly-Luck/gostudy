@@ -6,10 +6,11 @@ import (
 	"io"
 	"io/ioutil"
 	"net/http"
-	"os"
+	//"os"
 	"time"
 )
 
+/*
 func main() {
 	start := time.Now()
 	ch := make(chan string)
@@ -21,6 +22,7 @@ func main() {
 	}
 	fmt.Printf("%.2fs elpsed\n", time.Since(start).Seconds())
 }
+*/
 
 // http get and return info to channel
 func fetch(url string, ch chan<- string) {

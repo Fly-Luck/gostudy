@@ -8,7 +8,7 @@ import (
 	"io"
 	"math"
 	"math/rand"
-	"os"
+	//"os"
 )
 
 import (
@@ -26,26 +26,30 @@ const (
 
 /**
 func main() {
-	rand.Seed(time.Now().UTC().UnixNano())
 	// 1. use http to view from browser
 	// http://localhost:8000
 	if len(os.Args) > 1 && os.Args[1] == "web" {
 		//!+http
-		handler := func(w http.ResponseWriter, r *http.Request) {
-			lissajous(w)
-		}
-		http.HandleFunc("/", handler)
-		log.Fatal(http.ListenAndServe("localhost:8000", nil))
+		//lissajousServer()
 		return
 	}
 	// 2. generate the gif file
-	// go build gif.go
-	// ./gif > out.gif
+	// go build giftest.go
+	// ./giftest > out.gif
 	lissajous(os.Stdout)
 }
 */
 
+func lissajousServer() {
+	handler := func(w http.ResponseWriter, r *http.Request) {
+		lissajous(w)
+	}
+	http.HandleFunc("/", handler)
+	log.Fatal(http.ListenAndServe("localhost:8000", nil))
+}
+
 func lissajous(out io.Writer) {
+	rand.Seed(time.Now().UTC().UnixNano())
 	const (
 		cycles  = 5     // number of complete x oscillator revolutions
 		res     = 0.001 // angular resolution
