@@ -12,6 +12,7 @@ import (
 var mu sync.Mutex
 var count int
 
+/*
 func main() {
 	//http.HandleFunc("/", handler1)
 	// "handler" is a reference to a function
@@ -34,6 +35,7 @@ func main() {
 	log.Fatal(http.ListenAndServe("localhost:8080", nil))
 
 }
+*/
 
 // handler request/response
 func handler1(w http.ResponseWriter, r *http.Request) {
