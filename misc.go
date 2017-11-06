@@ -1,4 +1,5 @@
-// misc
+// 1. switch
+// 2. type
 package main
 
 import (
@@ -32,4 +33,19 @@ func coinflip() string {
 	} else {
 		return "edge"
 	}
+}
+func signum(x int) int {
+	switch { // equivalent to switch true
+	case x > 0:
+		return +1
+	case x < 0:
+		return -1
+	default:
+		return 0
+	}
+}
+
+// "type" <name> "struct"
+type Point struct {
+	X, Y int
 }
