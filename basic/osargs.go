@@ -1,7 +1,7 @@
 // 1. both way of imports
 // 2. use of variables and iteration
 // 2. use of os.Args and slice
-package main
+package basic
 
 import (
 	"fmt"
@@ -9,11 +9,13 @@ import (
 )
 import "os"
 
-//func main() {
-//	echo1()
-//	echo2()
-//	echo3()
-//}
+/*
+func main() {
+	echo1()
+	echo2()
+	echo3()
+}
+*/
 
 func echo1() {
 	var s string

@@ -1,6 +1,6 @@
 // 1. use of stdin, files and ioutil
 // 2. use of make and map
-package main
+package basic
 
 import (
 	"bufio"
@@ -10,11 +10,13 @@ import (
 	"strings"
 )
 
-//func main() {
-//dup1()
-//dup2()
-//	dup3()
-//}
+/*
+func main() {
+	dup1()
+	dup2()
+	dup3()
+}
+*/
 
 //read stdin
 func dup1() {

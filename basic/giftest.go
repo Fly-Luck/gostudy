@@ -1,5 +1,5 @@
 //gif anim
-package main
+package basic
 
 import (
 	"image"

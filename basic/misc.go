@@ -1,6 +1,6 @@
 // 1. switch
 // 2. type
-package main
+package basic
 
 import (
 	"fmt"

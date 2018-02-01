@@ -1,5 +1,5 @@
 // 1. basic use of net/http, including req/resp, resp body, resp status
-package main
+package basic
 
 import (
 	"fmt"

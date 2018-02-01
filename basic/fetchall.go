@@ -1,5 +1,5 @@
 // 1. use of gorountine and channel
-package main
+package basic
 
 import (
 	"fmt"

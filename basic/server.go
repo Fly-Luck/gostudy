@@ -1,6 +1,6 @@
 // 1. simple use of http handler and detailed request/response
 // 2. simple use of Mutex lock
-package main
+package basic
 
 import (
 	"fmt"
